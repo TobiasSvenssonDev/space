@@ -9,14 +9,21 @@ export default function NasaApodAPI() {
 
     const url = 'https://api.nasa.gov/planetary/apod';
     const apiKey = 'A3sumYKTb72gWZ2K9RcwfMo73LRjtIJy9fO579RE';
+    const currentDate = new Date();
+
+    currentDate.setDate(currentDate.getDate()-7);
+
+    const lastWeek = `${currentDate.getFullYear()}-${currentDate.getMonth()+1}-${currentDate.getDate()}`;
 
     await axios.get(url, {
       params: {
-        'api_key': apiKey,  
+        'api_key': apiKey,
+        'start_date': lastWeek        
       }
     })
       .then(function (response) {
         console.log(response.data.hdurl + " SUCCESS ");
+        response.data.map(item => {console.log(item.hdurl)})
         return response.data
         
       })
