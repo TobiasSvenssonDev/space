@@ -46,44 +46,6 @@ export default function NasaApodAPI() {
         "service_version": "v1",
         "title": "A Digital Lunar Eclipse",
         "url": "https://apod.nasa.gov/apod/image/2205/TLE_2022-05-16-02-59-35s1024.jpg"
-      },
-      {
-        "copyright": "Maxime Oudoux",
-        "date": "2022-05-20",
-        "explanation": "This serene sand and skyscape finds the Dune of Pilat on the coast of France still in Earth's shadow during the early morning hours of May 16. Extending into space, the planet's dark umbral shadow covered the Moon on that date. From that location the total phase of a lunar eclipse had begun before moonset. Still in sunlight though, the International Space Station crossed from the western horizon and Earth's largest artificial moon traced the bright flat arc through the sky over 400 km above. Simply constructed, the well-planned panoramic scene was captured over a 5 minutes in a series of consecutive images.",
-        "hdurl": "https://apod.nasa.gov/apod/image/2205/eclipse-lune-2022.jpg",
-        "media_type": "image",
-        "service_version": "v1",
-        "title": "A View from Earth's Shadow",
-        "url": "https://apod.nasa.gov/apod/image/2205/eclipse-lune-2022c1024.jpg"
-      },
-      {
-        "copyright": "Donald Waid",
-        "date": "2022-05-21",
-        "explanation": "Very faint planetary nebula Abell 7 is some 1,800 light-years distant, just south of Orion in planet Earth's skies in the constellation Lepus, The Hare. Surrounded by Milky Way stars and near the line-of-sight to distant background galaxies, its generally simple spherical shape, about 8 light-years in diameter, is outlined in this deep telescopic image. Within its confines are beautiful, more complex details enhanced by the use of narrowband filters. Emission from hydrogen is shown in reddish hues with oxygen emission mapped to green and blue colors, giving Abell 7 a natural appearance that would otherwise be much too faint to be appreciated by eye. A planetary nebula represents a very brief final phase in stellar evolution that our own Sun will experience 5 billion years hence, as the nebula's central, once sun-like star shrugs off its outer layers. Abell 7 itself is estimated to be 20,000 years old. Its central star is seen here as a fading white dwarf some 10 billion years old.",
-        "hdurl": "https://apod.nasa.gov/apod/image/2205/Abell_7-2022-02-20-HOO-1600.jpg",
-        "media_type": "image",
-        "service_version": "v1",
-        "title": "Planetary Nebula Abell 7",
-        "url": "https://apod.nasa.gov/apod/image/2205/Abell_7-2022-02-20-HOO-1024.jpg"
-      },
-      {
-        "date": "2022-05-22",
-        "explanation": "Tsunamis this large don't happen on Earth.  During 2006, a large solar flare from an Earth-sized sunspot produced a tsunami-type shock wave that was spectacular even for the Sun.  Pictured here, the tsunami wave was captured moving out from active region AR 10930 by the Optical Solar Patrol Network (OSPAN) telescope in New Mexico, USA.  The resulting shock wave, known technically as a Moreton wave, compressed and heated up gasses including hydrogen in the photosphere of the Sun, causing a momentarily brighter glow.  The featured image was taken in a very specific red color emitted exclusively by hydrogen gas.  The rampaging tsunami took out some active filaments on the Sun, although many re-established themselves later.  The solar tsunami spread at nearly one million kilometers per hour, and circled the entire Sun in a matter of minutes.",
-        "hdurl": "https://apod.nasa.gov/apod/image/2205/SunTsunami_nso_900.gif",
-        "media_type": "image",
-        "service_version": "v1",
-        "title": "A Large Tsunami Shock Wave on the Sun",
-        "url": "https://apod.nasa.gov/apod/image/2205/SunTsunami_nso_900.gif"
-      },
-      {
-        "date": "2022-05-23",
-        "explanation": "This picture of Andromeda shows not only where stars are now, but where stars will soon be. Of course, the big, beautiful Andromeda Galaxy, M31, is a spiral galaxy -- and a mere 2.5 million light-years away.  Both space-based and ground-based observatories have been here combined to produce this intriguing composite image of Andromeda, at wavelengths both inside and outside normally visible light. The visible light shows where M31's stars are now -- as highlighted in white and blue hues and imaged by the Hubble, Subaru, and Mayall telescopes.  The infrared light shows where M31's future stars will soon form -- as highlighted in orange hues and imaged by NASA's Spitzer Space Telescope.  The infrared light tracks enormous lanes of dust, warmed by stars, sweeping along Andromeda's spiral arms.  This dust is a tracer of the galaxy's vast interstellar gas -- the raw material for future star formation.  These new stars will likely form over the next hundred million years, surely well before Andromeda merges with our Milky Way Galaxy in about 5 billion years.",
-        "hdurl": "https://apod.nasa.gov/apod/image/2205/M31_HubbleSpitzerGendler_2000.jpg",
-        "media_type": "image",
-        "service_version": "v1",
-        "title": "The Once and Future Stars of Andromeda",
-        "url": "https://apod.nasa.gov/apod/image/2205/M31_HubbleSpitzerGendler_960.jpg"
       }
     ]);
     console.log(apods);
