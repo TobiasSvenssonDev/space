@@ -1,12 +1,23 @@
-import React from 'react'
+import React from 'react';
+import { Tooltip } from 'react-tippy';
 
 export default function Apod(props) {
     console.log(props.item)
   return (
     <div id={props.item.date}>
+        <Tooltip title={props.item.date} position='left-start' theme='light' animation='perspective'>
         <h3>{props.item.title}</h3>
+        </Tooltip>
         <p>{props.item.explanation}</p>
+        
+        <span>
+        <Tooltip title={props.item.copyright} position='top-start' theme='light' animation='perspective'>
         <img src={props.item.url} alt={props.item.title} />
+        </Tooltip>
+        </span>
+        
+       
+        
     </div>
   )
 }
