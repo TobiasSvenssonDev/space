@@ -1,4 +1,6 @@
 import NasaApodAPI from "./NasaApodAPI";
+import 'react-tippy/dist/tippy.css';
+
 
 function App() {
 
@@ -25,7 +27,7 @@ function App() {
       </nav>
 
       <main>
-        <NasaApodAPI />
+        <NasaApodAPI />        
       </main>
     </div>
   );
