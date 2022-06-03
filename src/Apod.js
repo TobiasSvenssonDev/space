@@ -8,13 +8,12 @@ export default function Apod(props) {
         <Tooltip title={props.item.date} position='left-start' theme='light' animation='perspective'>
         <h3 className='apod-header'>{props.item.title}</h3>
         </Tooltip>
-        <p className='apod-explanation'>{props.item.explanation}
-        </p>
         <Tooltip title={props.item.copyright} position='top-start' theme='light' animation='perspective'>
         <img className='apod-img'src={props.item.url} alt={props.item.title} />
         </Tooltip>
-        
-              
+        <Tooltip trigger='click' title={props.item.explanation} position='bottom'>
+        <button className='apod-explanation'>Info</button>
+        </Tooltip>         
     </article>
   )
 }
