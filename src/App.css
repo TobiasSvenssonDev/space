@@ -1,21 +1,24 @@
 body{
+    margin: 0;
     background-color: rgb(180, 180, 180);
     font-family:'Courier New', Courier, monospace;
 
 }
 
-#root > .container{
+
+.container{
     max-width: 1300px;
-    margin: 0;
+    margin: auto;
 
     background-color: blue;
     box-shadow: 0 0 10px #aaa;
 
     display: grid;
     grid-template-columns:  1fr;
-    grid-template-rows: 10vh 85vh 5vh;
+    grid-template-rows: 5% 50% 5%;
     grid-template-areas: 
     "header"    
+    "main"
     "main"
     "footer"
     ;
@@ -35,18 +38,56 @@ body{
 
 .apod-section{
     background-color: blueviolet;
+    
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 .apod-article{
-    margin: 10px 0;
-    width: 32%;
+    margin-bottom: 1%;
+    width: 33%;
+    
     box-sizing: border-box;
     box-shadow: 0 0 5px #999;
     border: 5px solid white;
+    
+    display: grid;
+    grid-template-columns:  1fr;
+    grid-template-rows: 10% 80% 10%;
+    grid-template-areas:
+    "apod-header"
+    "apod-img"
+    "apod-explanation"
+    ;
+}
+.apod-header{
+    grid-area: apod-header;
+    text-align: center;
+    font-size: large;
+    max-width: 80%;    
 }
 
 .apod-img{
-    max-width: 100%;    
+    grid-area: apod-img;
+    max-height: 100%;
+    max-width: 100%;
+    
+}
+.apod-explanation{
+    grid-area: apod-explanation;
+    height: 100%;
+    width: 100%;
+    font-size: x-large;
+    
+}
+
+footer {
+    grid-area: footer;
+    text-align: center;
+    font-size: 18px;
+    color: #eee;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
