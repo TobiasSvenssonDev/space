@@ -1,41 +1,41 @@
 import React from 'react';
 import { Tooltip } from 'react-tippy';
 
+
 export default function Apod(props) {
+
+
   console.log(props.item)
   if (props.item.media_type === "image"){
   return (
     <article id={props.item.date} className='apod-article'>
-      <Tooltip title={props.item.date} position='left-start' theme='light' animation='perspective'>
-        <h3 className='apod-header'>{props.item.title}</h3>
+      <Tooltip title={props.item.date} position='left-start' theme='dark' animation='perspective'>
+        <h1 className='apod-header'>{props.item.title}</h1>
       </Tooltip>
       <Tooltip title={props.item.copyright} position='top-start' theme='light' animation='perspective'>
         <img className='apod-img' src={props.item.url} alt={props.item.title} />
       </Tooltip>
-      <Tooltip trigger='click' title={props.item.explanation} position='bottom'>
-        <button className='apod-explanation'>Info</button>
-      </Tooltip>
+        <p className='apod-explanation'>{props.item.explanation}</p>
     </article>
   )
 } else if (props.item.media_type === "video"){
   return (<article id={props.item.date} className='apod-article'>
   <Tooltip title={props.item.date} position='left-start' theme='light' animation='perspective'>
-    <h3 className='apod-header'>{props.item.title}</h3>
+    <h1 className='apod-header'>{props.item.title}</h1>
   </Tooltip>
   <Tooltip title={props.item.copyright} position='top-start' theme='light' animation='perspective'>
     <iframe
         className='apod-stream'
         src={props.item.url}
-        width="100%"
+        width="640" 
+        height="360"
         frameborder="0"
         allow="encrypted-media"
         allowfullscreen
         title={props.item.title}
       />{" "}
-  </Tooltip>
-  <Tooltip trigger='click' title={props.item.explanation} position='bottom'>
-    <button className='apod-explanation'>Info</button>
-  </Tooltip>
+  </Tooltip>  
+  <p className='apod-explanation'>{props.item.explanation}</p>
 </article>)
 }}
 
