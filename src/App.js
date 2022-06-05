@@ -5,13 +5,14 @@ function App() {
 
   return (<>
     <header className="header">
-      <h1 id="brand">NASA APOD</h1>
+      <h1 >APOD</h1>
+      <p >Delivering the last seven days of Nasa: Astronomy Picture Of the Day</p>
     </header>
     <main className="main">
       <NasaApodAPI />
     </main>
     <footer className="footer">
-      SIDFOT
+    ©Tobias Svensson
     </footer>
   </>
   );

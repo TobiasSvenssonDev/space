@@ -14,7 +14,7 @@ export default function NasaApodAPI() {
     const apiKey = 'A3sumYKTb72gWZ2K9RcwfMo73LRjtIJy9fO579RE';
     const currentDate = new Date();
 
-    currentDate.setDate(currentDate.getDate() - 8);
+    currentDate.setDate(currentDate.getDate() - 6);
 
     const lastWeek = `${currentDate.getFullYear()}-${currentDate.getMonth() + 1}-${currentDate.getDate()}`;
     console.log(lastWeek)
