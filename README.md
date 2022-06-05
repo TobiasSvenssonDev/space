@@ -31,7 +31,6 @@ You may also see any lint errors in the console.
 
 ## Built With
 
-* 
 * [React](https://reactjs.org/) - Framework
 * [Axios](https://axios-http.com/) - Library: HTTP Client 
 * [Tippy](https://atomiks.github.io/tippyjs/) - Library: Tooltips
