@@ -1,26 +1,43 @@
 import React from 'react';
 import { Tooltip } from 'react-tippy';
 
+
 export default function Apod(props) {
-    console.log(props.item)
+
+
+  console.log(props.item)
+  if (props.item.media_type === "image"){
   return (
-    <div id={props.item.date}>
-        <Tooltip title={props.item.date} position='left-start' theme='light' animation='perspective'>
-        <h3>{props.item.title}</h3>
-        </Tooltip>
-        <p>{props.item.explanation}</p>
-        
-        <span>
-        <Tooltip title={props.item.copyright} position='top-start' theme='light' animation='perspective'>
-        <img src={props.item.url} alt={props.item.title} />
-        </Tooltip>
-        </span>
-        
-       
-        
-    </div>
+    <article id={props.item.date} className='apod-article'>
+      <Tooltip title={props.item.date} position='left-start' theme='dark' animation='perspective'>
+        <h1 className='apod-header'>{props.item.title}</h1>
+      </Tooltip>
+      <Tooltip title={props.item.copyright} position='top-start' theme='light' animation='perspective'>
+        <img className='apod-img' src={props.item.url} alt={props.item.title} />
+      </Tooltip>
+        <p className='apod-explanation'>{props.item.explanation}</p>
+    </article>
   )
-}
+} else if (props.item.media_type === "video"){
+  return (<article id={props.item.date} className='apod-article'>
+  <Tooltip title={props.item.date} position='left-start' theme='light' animation='perspective'>
+    <h1 className='apod-header'>{props.item.title}</h1>
+  </Tooltip>
+  <Tooltip title={props.item.copyright} position='top-start' theme='light' animation='perspective'>
+    <iframe
+        className='apod-stream'
+        src={props.item.url}
+        width="640" 
+        height="360"
+        frameborder="0"
+        allow="encrypted-media"
+        allowfullscreen
+        title={props.item.title}
+      />{" "}
+  </Tooltip>  
+  <p className='apod-explanation'>{props.item.explanation}</p>
+</article>)
+}}
 
 
 /* 
