@@ -35,7 +35,7 @@ export default function NasaApodAPI() {
   if (!apods) return null;
   return (    
       <section className='apod-section'>
-        {apods.map(apod => <Apod key={apod.date} item={apod} />)}
+        {[...apods].reverse().map(apod => <Apod key={apod.date} item={apod} />)}
       </section>    
 
   )
