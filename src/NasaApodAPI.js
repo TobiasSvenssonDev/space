@@ -10,6 +10,9 @@ export default function NasaApodAPI() {
   console.log(apods);
 
 
+
+
+
   useEffect(() => {
     const apiKey = 'A3sumYKTb72gWZ2K9RcwfMo73LRjtIJy9fO579RE';
     const currentDate = new Date();
@@ -17,7 +20,7 @@ export default function NasaApodAPI() {
     currentDate.setDate(currentDate.getDate() - 6);
 
     const lastWeek = `${currentDate.getFullYear()}-${currentDate.getMonth() + 1}-${currentDate.getDate()}`;
-    console.log(lastWeek)
+
     axios.get(baseURL, {
       params: {
         'api_key': apiKey,
@@ -30,10 +33,10 @@ export default function NasaApodAPI() {
   }, []);
 
   if (!apods) return null;
-  // {movies.map(movie => <Movie key={movie.id} item={movie} deleteMovie={deleteMovie} />)}
   return (    
       <section className='apod-section'>
         {apods.map(apod => <Apod key={apod.date} item={apod} />)}
       </section>    
+
   )
 }
